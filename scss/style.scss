@@ -1,0 +1,77 @@
+//CSS Reset
+@import "vendor/normalize";
+
+//External Libraries
+@import "susy";
+
+//Core Partial
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+
+//Import Modules
+@import "modules/header";
+@import "modules/nav";
+@import "modules/about_contact";
+@import "modules/video";
+
+// Susy settings
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  container: auto,
+  container-position: center,
+  columns: 6,
+  gutters: 1/12,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: show,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+*,
+*:after,
+*::before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+  @include container;
+  padding:0 0 0 50px;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+
+

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="shortcut icon" href="images/favicon.png">
-    <title>Ellery - A Patrick Pearse Film</title>
+    <title>A Patrick Pearse Film</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="css/style.css" rel="stylesheet">
@@ -18,30 +18,94 @@
 
   <div class="container">
 
-  	<header>
-<p>Ellery</p>
-
-       <a href="index.html"><h1>a Patrick Pearse<br/> film</h1></a>
+    <header>
+      <div class="container">
+        <div class="back-btn">
+          <a href="index.html">back</a>
+        </div>
+        <div class="project-title">
+          <h2>Ellery</h2>
+        </div>
+        <div class="logo white">
+          <a href="#"><h1>a Patrick Pearse<br/> film</h1></a>
+        </div>
+      </div>
     </header>
   	
-    <nav class="nav-table">
-      	<ul class="nav-cell">
-  	        
-            <li class="ellery"><a href="#">Ellery</a></li>
-            <div class="ellery-bg"></div>
+    <div id='embed-container'>
+      <iframe src="https://player.vimeo.com/video/90396212?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 
-            <br/>
-
-            <li class="pernod-ricard"><a href="#">Pernod Ricard</a></li>
-            <div class="pernod-ricard-bg"></div>
-
-           
-        </ul>
-    </nav>
-
-
-  </div>
+  </div><!--/container-->
    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+function bgVideoEmbed(container, ratio) {
+
+    this.ratio = (ratio === null) ? 16 / 9 : ratio; //default 16/9
+    this.container = $(container);
+
+    // define local variable
+    var self = this;
+    ratio = this.ratio;
+    container = this.container;
+
+    //construct
+    function construct() {
+        container.css({
+            overflow: 'hidden',
+            position: 'relative',
+            zIndex: 1,
+            width: '100%',
+            height: '100%'
+        });
+
+        container.find('iframe, embed, object').css({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%'
+        });
+
+        videoScale();
+      
+        $(window).resize(function(event) {
+            videoScale();
+        });
+    }
+
+    // when screen aspect ratio differs from video, video must center and underlay one dimension
+    function videoScale() {
+
+        var width = $(window).width(),
+            pWidth, // player width, to be defined
+            height = $(window).height(),
+            pHeight; // player height, tbd
+
+        if (width / (ratio) < height) { // if new video height < window height (gap underneath)
+            pWidth = Math.ceil(height * ratio); // get new player width
+            container.width(pWidth).height(height).css({
+                left: (width - pWidth) / 2,
+                top: 0
+            }); // player width is greater, offset left; reset top
+        } else { // new video width < window width (gap to right)
+            pHeight = Math.ceil(width / ratio); // get new player height
+            container.width(width).height(pHeight).css({
+                left: 0,
+                top: (height - pHeight) / 2
+            }); // player height is greater, offset top; reset left
+        }
+    }
+
+    //init
+    construct();
+}
+
+//usage
+bgVideo = new bgVideoEmbed('#embed-container', 16 / 9); //given the container for the embed video, and the ratio of bgvideo, default 16/9 if no setting
+</script>
 </body>
 </html>
+

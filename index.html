@@ -11,7 +11,6 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 
@@ -20,42 +19,47 @@
   <div class="container">
 
   	<header>
-      <a href="#" class="logo"><h1>a Patrick Pearse<br/> film</h1></a>
+    <div class="container">
+      <div class="back-btn">
+        <a href="#">back</a>
+      </div>
+      <div class="project-title">
+        <h2>Ellery</h2>
+      </div>
+      <div class="logo">
+        <a href="#"><h1>a Patrick Pearse<br/> film</h1></a>
+      </div>
+      </div>
     </header>
   	
     <nav class="nav-table">
       	<ul class="nav-cell">
-  	        <hr>
-            <li class="ellery"><a href="#">Ellery</a></li>
+
+            <li class="ellery"><a href="ellery.html">Ellery</a></li>
             <div class="ellery-bg"></div>
 
-            <hr>
             <li class="pernod-ricard"><a href="#">Pernod Ricard</a></li>
             <div class="pernod-ricard-bg"></div>
 
-            <hr>
             <li class="fancois-jane"><a href="#">Fancois Jane</a></li>
             <div class="fancois-jane-bg"></div>
 
-            <hr>
             <li class="steve"><a href="#">Steve</a></li>
             <div class="steve-bg"></div>
-
-            <hr>
+            
         </ul>
     </nav>
 
-
-  </div>
+  </div><!--/container-->
    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
   $(".nav-table ul li").hover(function() { // Mouse over
-  $(this).siblings().stop().fadeTo(900, 0.3);
-  $(this).parent().siblings().stop().fadeTo(900, 0.3); 
+  $(this).siblings().stop().fadeTo(300, 0.3);
+  $(this).parent().siblings().stop().fadeTo(300, 0.3); 
   }, function() { // Mouse out
-  $(this).siblings().stop().fadeTo(900, 1);
-  $(this).parent().siblings().stop().fadeTo(900, 1);
+  $(this).siblings().stop().fadeTo(300, 1);
+  $(this).parent().siblings().stop().fadeTo(300, 1);
   });
 </script>
 </body>

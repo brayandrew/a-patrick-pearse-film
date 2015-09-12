@@ -1,0 +1,32 @@
+header{
+	position: absolute;
+	top: 0;
+ 	left: 0;
+ 	right: 0;
+ 	z-index: 2;
+
+ 	.container { 
+    	@include container;
+
+    	.back-btn{
+			float:left;
+			@include span(first 1 of 6);
+		}
+
+		.project-title{
+			float:left;
+			@include span(2 of 6 at 2);
+		}
+ 
+	    .logo{
+			@include span(last 3 of 6);
+		}
+  	}
+}
+
+
+nav{
+	float:left;
+	@include span(5 of 6 at 2);
+}
+

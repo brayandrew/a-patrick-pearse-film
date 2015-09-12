@@ -1,1 +1,0 @@
-# a-patrick-pearse-film
