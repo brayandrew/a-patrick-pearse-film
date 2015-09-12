@@ -1,0 +1,272 @@
+
+// style.scss
+// ==============
+ 
+//Compass imports
+@import "compass";
+@import "compass/reset";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import 'compass/css3/filter';
+@import "compass/css3/flexbox";
+@import "compass/css3/transition";
+
+//External Libraries
+@import "susy";
+
+
+
+/* Changing Susy default global settings */
+$susy: (
+  columns: 8,
+  math: float,
+  container: 90%,
+  global-box-sizing: border-box 
+  );
+
+/* Offcanvas container width */
+$offCanvasWidth: 60%;
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+*,
+*:after,
+*::before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body,
+.container {
+	height: 100%;
+}
+
+.container {
+  @include container;
+}
+
+// Main styles -------------------------------------------
+
+body{
+  background:#fff;
+  height:100%;
+}
+
+header{
+  width:100%;
+
+}
+
+.logo{
+  position: absolute;
+  top:50px;
+  right:5%;
+  float:right;
+  text-align:right;
+  text-decoration: none;
+}
+
+h1{
+	font-family: "Garamond", serif;
+	font-size:80px;
+  color:#222;
+}
+
+hr{
+  border:0;
+  border-top:1px solid #eee;
+}
+
+/* unvisited link */
+a:link {
+    color: #222;
+}
+
+/* visited link */
+a:visited {
+    color: #222;
+}
+
+/* mouse over link */
+a:hover {
+    color: #222;
+}
+
+/* selected link */
+a:active {
+    color: #222;
+}
+
+
+
+// Navigation styles -------------------------------------------
+
+nav{
+	@include span(last 7);
+}
+
+nav ul li{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:80px;
+	font-weight:600;
+}
+
+nav ul li a{
+	text-decoration: none;
+}
+
+.nav-table {
+    display:table;
+   
+    height:100%;
+}
+
+.nav-cell {
+    display:table-cell;
+    width:100%;
+    height:100%;
+    vertical-align:middle;
+}
+
+
+// Ellery nav styles -------------------------------------------
+
+.ellery-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: transparent;
+}
+
+.ellery {
+    position: relative;
+    z-index: 2;
+    color: #000;  /* Fallback: assume this color ON TOP of image */
+    background: url(../img/ellery.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ellery:hover ~ .ellery-bg {
+    background: url(../img/ellery.jpg) no-repeat;
+    background-size: cover;
+}
+
+.ellery:hover{
+  background: url(../img/ellery.jpg) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Pernod Ricard nav styles -------------------------------------------
+
+.pernod-ricard-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: transparent;
+}
+
+.pernod-ricard{
+    position: relative;
+    z-index: 2;
+    color: #000;  /* Fallback: assume this color ON TOP of image */
+   	background: url(../img/pernod-ricard.jpg) no-repeat;
+   	-webkit-background-clip: text;
+   	-webkit-text-fill-color: transparent;
+}
+
+.pernod-ricard:hover ~ .pernod-ricard-bg {
+    background: url(../img/pernod-ricard.jpg) no-repeat;
+    background-size: cover;
+}
+
+.pernod-ricard:hover{
+  background: url(../img/pernod-ricard.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+// Francois Jane nav styles -------------------------------------------
+
+.fancois-jane-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: transparent;
+}
+
+.fancois-jane{
+    position: relative;
+    z-index: 2;
+    color: #000;  /* Fallback: assume this color ON TOP of image */
+    background: url(../img/fancois-jane.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fancois-jane:hover ~ .fancois-jane-bg {
+    background: url(../img/fancois-jane.jpg) no-repeat;
+    background-size: cover;
+}
+
+.fancois-jane:hover{
+  background: url(../img/fancois-jane.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// Steve nav styles -------------------------------------------
+
+.steve-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: transparent;
+}
+
+.steve{
+    position: relative;
+    z-index: 2;
+    color: #000;  /* Fallback: assume this color ON TOP of image */
+    background: url(../img/steve.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.steve:hover ~ .steve-bg {
+    background: url(../img/steve.jpg) no-repeat;
+    background-size: cover;
+}
+
+.steve:hover{
+  background: url(../img/steve.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+

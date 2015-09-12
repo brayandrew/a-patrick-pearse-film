@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>A Patrick Pearse Film</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <div class="container">
+
+  	<header>
+      <a href="#" class="logo"><h1>a Patrick Pearse<br/> film</h1></a>
+    </header>
+  	
+    <nav class="nav-table">
+      	<ul class="nav-cell">
+  	        <hr>
+            <li class="ellery"><a href="#">Ellery</a></li>
+            <div class="ellery-bg"></div>
+
+            <hr>
+            <li class="pernod-ricard"><a href="#">Pernod Ricard</a></li>
+            <div class="pernod-ricard-bg"></div>
+
+            <hr>
+            <li class="fancois-jane"><a href="#">Fancois Jane</a></li>
+            <div class="fancois-jane-bg"></div>
+
+            <hr>
+            <li class="steve"><a href="#">Steve</a></li>
+            <div class="steve-bg"></div>
+
+            <hr>
+        </ul>
+    </nav>
+
+
+  </div>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+  $(".nav-table ul li").hover(function() { // Mouse over
+  $(this).siblings().stop().fadeTo(900, 0.3);
+  $(this).parent().siblings().stop().fadeTo(900, 0.3); 
+  }, function() { // Mouse out
+  $(this).siblings().stop().fadeTo(900, 1);
+  $(this).parent().siblings().stop().fadeTo(900, 1);
+  });
+</script>
+</body>
+</html>
+
