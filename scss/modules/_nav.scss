@@ -5,11 +5,11 @@ nav ul{
 
 nav ul li{
 	list-style-type: none;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $fontfamily;
 	font-size:80px;
 	font-weight:600;
 	margin:0;
-	padding:0 0 20px;
+	padding:0 0 10px;
 }
 
 .nav-table {
@@ -23,3 +23,77 @@ nav ul li{
     height:100%;
     vertical-align:middle;
 }
+
+// Ellery -------------------------------------------
+
+#ellery{
+    position: relative;
+    z-index: 2;
+    color: #000;  /* Fallback: assume this color ON TOP of image */
+   	background: url(../img/ellery.jpg) no-repeat;
+   	-webkit-background-clip: text;
+   	-webkit-text-fill-color: transparent;
+}
+
+
+#ellery:hover{
+  	background: url(../img/ellery.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// Pernod Ricard -------------------------------------------
+
+#pernod-ricard{
+    position: relative;
+    z-index: 2;
+    color: #000;  /* Fallback: assume this color ON TOP of image */
+   	background: url(../img/pernod-ricard.jpg) no-repeat;
+   	-webkit-background-clip: text;
+   	-webkit-text-fill-color: transparent;
+}
+
+#pernod-ricard:hover{
+  	background: url(../img/pernod-ricard.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// Francois Jane  -------------------------------------------
+
+#francois-jane{
+    position: relative;
+    z-index: 2;
+    color: #000;  /* Fallback: assume this color ON TOP of image */
+   	background: url(../img/francois-jane.jpg) no-repeat;
+   	-webkit-background-clip: text;
+   	-webkit-text-fill-color: transparent;
+}
+
+#francois-jane:hover{
+  	background: url(../img/francois-jane.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// Steve  -------------------------------------------
+
+#steve{
+    position: relative;
+    z-index: 2;
+    color: #000;  /* Fallback: assume this color ON TOP of image */
+   	background: url(../img/steve.jpg) no-repeat;
+   	-webkit-background-clip: text;
+   	-webkit-text-fill-color: transparent;
+}
+
+#steve:hover{
+  	background: url(../img/steve.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+

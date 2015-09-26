@@ -10,23 +10,24 @@ header{
 
     	.back-btn{
 			float:left;
-			@include span(first 1 of 6);
+			@include span(2 of 12);
 		}
 
 		.project-title{
 			float:left;
-			@include span(2 of 6 at 2);
+			@include span(5 of 12);
+			
 		}
  
 	    .logo{
-			@include span(last 3 of 6);
+			@include span(last 5 of 12);
 		}
   	}
 }
 
-
-nav{
-	float:left;
-	@include span(5 of 6 at 2);
+.nav-table{
+	@include break;
+	@include prefix(2 of 12);
+	@include span(7 of 12);
 }
 

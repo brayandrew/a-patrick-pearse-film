@@ -1,18 +1,21 @@
 
 
 h1{
-	font-family: "Garamond", serif;
-	font-size:80px;
-  	color:$black;
-  	font-weight:200;
-  	margin:0;
-  	padding:0;
+  font-family: "MillerDisplay", serif;
+  color:$black;
+  font-size:70px;
+  font-weight:200;
+  line-height:70px;
+  margin:0;
+  padding:0;
+  
 }
 
 h2{
+  font-family: $fontfamily;
 	font-size:60px;
 	margin:0;
-  	padding:0;
+  padding:0;
 }
 
 h3{

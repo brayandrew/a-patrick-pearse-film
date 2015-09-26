@@ -10,58 +10,67 @@
     <title>A Patrick Pearse Film</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link href="css/test.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!-- http://www.webtype.com - Miller Display Bold 30 Day Trial -->
+    <link href="//cloud.webtype.com/css/91fb8564-6ee0-4723-94f1-8ddbbf45cc04.css" rel="stylesheet" type="text/css" />
 </head>
-
 
 <body>
 
-  <div class="container">
+  <div id="mobile-navigation">
+    <div id="mobile-navigation-toggle">
+      <a href="#">
+          <i class="icon-cross"></i>
+          <i class="icon-navigation-left"></i>
+      </a>
+    </div>
+    <div id="mobile-navigation-menu">
+           
+    </div>
+  </div>
 
-  	<header>
+  <div id="site-navigation">
+      <div class="navigation-label">
+          <i class="icon-navigation-left-vert"></i>
+      </div>
+  </div>
+
+  <div id="site-navigation-wrap">
+      <div id="site-navigation-table">
+          <div id="site-navigation-cell">
+              <div id="navigation">
+                 
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="overlay"></div>
     <div class="container">
-      <div class="back-btn">
-        <a href="#">back</a>
-      </div>
-      <div class="project-title">
-        <h2>Ellery</h2>
-      </div>
-      <div class="logo">
-        <a href="#"><h1>a Patrick Pearse<br/> film</h1></a>
-      </div>
-      </div>
-    </header>
-  	
-    <nav class="nav-table">
-      	<ul class="nav-cell">
+    	<header>
+        <div class="container">
+          <div class="logo">
+            <a href="#"><h1>a Patrick Pearse<br/>&#64257;lm</h1></a>
+          </div>
+        </div>
+      </header>
+    	
+      <nav class="nav-table">
+        	<ul class="nav-cell">
+              <li id="ellery"><a href="ellery.html">Ellery</a></li>
+              <li id="pernod-ricard"><a href="#">Pernod Ricard</a></li>
+              <li id="francois-jane"><a href="#">Francois Jane</a></li>
+              <li id="steve"><a href="#">Steve</a></li>
+          </ul>
+      </nav>
+    </div><!--/container-->
 
-            <li class="ellery"><a href="ellery.html">Ellery</a></li>
-            <div class="ellery-bg"></div>
-
-            <li class="pernod-ricard"><a href="#">Pernod Ricard</a></li>
-            <div class="pernod-ricard-bg"></div>
-
-            <li class="fancois-jane"><a href="#">Fancois Jane</a></li>
-            <div class="fancois-jane-bg"></div>
-
-            <li class="steve"><a href="#">Steve</a></li>
-            <div class="steve-bg"></div>
-            
-        </ul>
-    </nav>
-
-  </div><!--/container-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/test/libs.min.js"></script>
+  <script src="js/test/main-test.js"></script>
    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript">
-  $(".nav-table ul li").hover(function() { // Mouse over
-  $(this).siblings().stop().fadeTo(300, 0.3);
-  $(this).parent().siblings().stop().fadeTo(300, 0.3); 
-  }, function() { // Mouse out
-  $(this).siblings().stop().fadeTo(300, 1);
-  $(this).parent().siblings().stop().fadeTo(300, 1);
-  });
-</script>
 </body>
 </html>
 

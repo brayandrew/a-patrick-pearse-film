@@ -21,16 +21,16 @@ $susy: (
   flow: ltr,
   math: fluid,
   output: float,
-  gutter-position: inside,
+  gutter-position: inside-static,
   container: auto,
   container-position: center,
-  columns: 6,
-  gutters: 1/12,
+  columns: 12,
+  gutters: 0.25,
   column-width: false,
   global-box-sizing: content-box,
   last-flow: to,
   debug: (
-    image: show,
+    image: hide,
     color: rgba(#66f, .25),
     output: background,
     toggle: top right,
@@ -68,7 +68,11 @@ body,
 body{
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  background-size: cover;
+  -webkit-transition: background 600ms ease-out 600ms;
+    -moz-transition: background 600ms ease-out 600ms;
+    -o-transition: background 600ms ease-out 600ms;
+    transition: background 600ms ease-out 600ms;
 }
 
 
