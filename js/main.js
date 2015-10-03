@@ -63,8 +63,8 @@ $(document).ready(function() {
 // Mouse over opacity
 $(".nav-table ul li").hover(function() { 
 
-  $(this).siblings().stop().fadeTo(200, 0.2);
-  $(this).parent().siblings().stop().fadeTo(200, 0.2); 
+  $(this).siblings().stop().fadeTo(200, 0.5);
+  $(this).parent().siblings().stop().fadeTo(200, 0.5); 
   }, function() { // Mouse out
   $(this).siblings().stop().fadeTo(50, 1);
   $(this).parent().siblings().stop().fadeTo(50, 1);

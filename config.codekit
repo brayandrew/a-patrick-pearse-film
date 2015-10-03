@@ -962,20 +962,20 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/css\/iconmoon.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/iconmoon.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/css\/test.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/test.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1000,17 +1000,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/ellery.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12358,
-		"inputAbbreviatedPath": "\/img\/ellery.jpg",
-		"outputAbbreviatedPath": "\/img\/ellery.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/francois-jane-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1018,17 +1007,6 @@
 		"initialSize": 46533,
 		"inputAbbreviatedPath": "\/img\/francois-jane-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/francois-jane-bg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/francois-jane.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20806,
-		"inputAbbreviatedPath": "\/img\/francois-jane.jpg",
-		"outputAbbreviatedPath": "\/img\/francois-jane.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1044,17 +1022,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/pernod-ricard.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 42727,
-		"inputAbbreviatedPath": "\/img\/pernod-ricard.jpg",
-		"outputAbbreviatedPath": "\/img\/pernod-ricard.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/steve-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1062,17 +1029,6 @@
 		"initialSize": 161991,
 		"inputAbbreviatedPath": "\/img\/steve-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/steve-bg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/steve.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 90561,
-		"inputAbbreviatedPath": "\/img\/steve.jpg",
-		"outputAbbreviatedPath": "\/img\/steve.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

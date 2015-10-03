@@ -28,6 +28,6 @@ header{
 .nav-table{
 	@include break;
 	@include prefix(2 of 12);
-	@include span(7 of 12);
+	@include span(full);
 }
 

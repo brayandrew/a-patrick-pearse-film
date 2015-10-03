@@ -97,7 +97,51 @@
 			$('body').addClass('show-works-navigation');
 		});
 
-		
+		function attachLazy() {
+			$(window).scroll(function() {
+				
+				if($(window).scrollTop() + $(window).height() == $(document).height() && journalpostlimit == false) {
+
+					var requestdata = {
+						'offset': $('.journal-item').length
+					};
+
+			    	$.ajax({
+						type: 'POST',
+						url: window.location.href + 'morejournalposts',
+						data: requestdata,
+						dataType: "json",
+						 beforeSend : function (){
+			                
+			            },
+						success:function(data){
+
+							if (data.journalposts.length == 0) {
+								journalpostlimit = true;
+								//$('#lazyloading').fadeIn('fast');
+								$('#lazyloading span').removeClass('pulse');
+							} else {
+								dust.render("journalpost", data, function(err, out) {
+									$("#journal-inner").append(out);
+							    });
+							}
+
+							
+						},
+						error:function(data){
+							
+						}
+					});
+				
+				}
+			});
+		}
+
+		if ($('#journal').length) {
+			attachLazy();
+		}
+
+	});
 
 	$(window).load(function(event) {
 	});

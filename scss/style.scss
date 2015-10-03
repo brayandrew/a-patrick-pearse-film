@@ -63,16 +63,18 @@ html,
 body,
 .container {
   height: 100%;
+
 }
 
 body{
   margin: 0;
   padding: 0;
+  background-color:$bg;
   background-size: cover;
   -webkit-transition: background 600ms ease-out 600ms;
-    -moz-transition: background 600ms ease-out 600ms;
-    -o-transition: background 600ms ease-out 600ms;
-    transition: background 600ms ease-out 600ms;
+  -moz-transition: background 600ms ease-out 600ms;
+  -o-transition: background 600ms ease-out 600ms;
+  transition: background 600ms ease-out 600ms;
 }
 
 
